@@ -1,4 +1,4 @@
-<div >
+<div>
   <h1>
     <%= session[:username] %>
   </h1>
@@ -6,7 +6,6 @@
     <%= repo["name"] %>
     <br></br>
   <% end %>
-
   <%= form_tag("/repositories/create", method: "post") do %>
     New Repo:
     <%= text_field_tag(:name, nil, id: "new-repo") %>
